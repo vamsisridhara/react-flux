@@ -1,5 +1,8 @@
 "use strict";
 var React = require('react');
+var Router = require('react-router');
+var Link = Router.Link;
+
 var Home = React.createClass({
     render: function () {
         return (
@@ -8,6 +11,7 @@ var Home = React.createClass({
                 <p>
                     React, React Router , Flux for responsive web apps
                 </p>
+                <Link to="about" className="btn btn-sm btn-primary">About</Link>
             </div>
         );
     }
